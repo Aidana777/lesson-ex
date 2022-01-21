@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+:root{
+  --text:#1E2022;
+  --primary-btn:linear-gradient(135deg, #61B15A 0%, #ADCE74 100%);;
+  --secondary-btn:#FFCE89;
+
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+
+}
+.container{
+  padding: 36px 20px;
+  background-color: #E5E5E5;;
+  min-height:100vh ;
+}
+.header{
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+}
+button,input, select{
+  border: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.logo{
+ display: grid;
+ grid-auto-flow: column;
+align-items: center;
+ margin-right: 156px;
+ column-gap: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+}
+.fillter{
+column-gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-right: 35px;
+}
+.fillter__search{
+  width: 100%;
+}
+.fillter__mood{
+  width: 100px;
+}
+.btn{
+  height: 40px;
+  width: 167px;
+  background: linear-gradient(135deg, #61B15A 0%, #ADCE74 100%);
+
+  border-radius: 12px;
+  color: black;
+}
+.btn__secondary{
+  color: var(--text);
+  background: var(--secondary-btn);
+}
+.header nav{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 14px;
+  align-items: center;
+}
+.nav img{
+  position: relative;
+  left: 50px;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 14px;
+  background: #ffff;
+}
+.cards{
+  display: grid;
+  
+  margin-top: 10px;
+ 
+ 
+}
+.emojis{
+  position: relative;
+  bottom: 250px;
+  right: 30px;
+  background: #FFFFFFCC;
+border-radius: 11px;
+
+}
+.cards-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+color: var(--text); 
+float: left;
+
+}
+.cards-text{
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+
+}
+.data{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+position: relative;
+left: 11px;
+bottom: 8px;
+  
+
+}
+
+@media (max-width:640px ) {
+  .header{
+    grid-template-columns: 1fr;
+  }
+  .cards{
+    grid-template-columns: repeat(1,fr);
+  }
+}
